@@ -1,0 +1,7 @@
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+:root {
+    box-sizing: border-box;
+    color-scheme: dark light;
+}
