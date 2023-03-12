@@ -5,3 +5,9 @@
     box-sizing: border-box;
     color-scheme: dark light;
 }
+a {
+    color: inherit;
+}
+a:hover, a:focus-visible {
+    font-style: italic;
+}
