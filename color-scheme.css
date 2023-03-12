@@ -56,6 +56,10 @@ html, .cs-light {
     color: var(--cs-main-dark);
 }
 
+hr {
+    border-color: var(--cs-accent-dark-sm);
+}
+
 a, abbr, q, em {
     color: var(--cs-accent-dark-sm);
 }
@@ -95,6 +99,9 @@ input[type=reset]:hover, input[type=reset]:focus-visible {
         background-color: var(--cs-main-dark);
         color: var(--cs-main-light);
     }
+    hr {
+        border-color: var(--cs-accent-light-sm);
+    }
     a, abbr, q, em {
         color: var(--cs-accent-light-sm);
     }
@@ -130,6 +137,9 @@ input[type=reset]:hover, input[type=reset]:focus-visible {
 }
 
 /*Special light mode */
+.cs-light hr {
+    border-color: var(--cs-accent-dark-sm);
+}
 .cs-light a,
 .cs-light abbr,
 .cs-light q,
@@ -170,6 +180,9 @@ input[type=reset]:hover, input[type=reset]:focus-visible {
 
 
 /*Special dark mode*/
+.cs-dark hr {
+    border-color: var(--cs-accent-light-sm);
+}
 .cs-dark a,
 .cs-dark abbr,
 .cs-dark q,
