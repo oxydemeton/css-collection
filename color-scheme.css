@@ -10,7 +10,7 @@
     /*Root Css*/
     color-scheme: dark light;
 }
-/*General Light mode*/
+/*Schemata */
 .cs-light {
     color-scheme: light;
 }
@@ -47,7 +47,9 @@
 .cs-main-blue {
     --cs-main-dark: hsl(240 20% 10%);
     --cs-main-light: hsl(240, 50%, 90%);
-}
+} 
+
+/* Apply Scheme */
 
 html, .cs-light {
     background-color: var(--cs-main-light);
@@ -59,6 +61,12 @@ a, abbr, q, em {
 }
 cite, strong {
     color: var(--cs-accent-dark-lg);
+}
+textarea {
+    border-color: var(--cs-cfg-accent-dark-sm);
+}
+textarea:focus {
+    border-color: var(--cs-accent-dark-lg);
 }
 /*General dark mode*/
 @media(prefers-color-scheme: dark) {
