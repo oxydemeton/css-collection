@@ -81,8 +81,12 @@ textarea {
     outline: none;
 }
 textarea:focus {
+    outline: none;
+}
+textarea:focus-visible {
     outline: 1px solid black;
 }
+
 
 button,
 input[type="button"],
