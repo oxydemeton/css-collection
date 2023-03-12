@@ -63,10 +63,11 @@ cite, strong {
     color: var(--cs-accent-dark-lg);
 }
 textarea {
-    border-color: var(--cs-cfg-accent-dark-sm);
+    border-color: var(--cs-accent-dark-sm);
 }
-textarea:focus {
+textarea:focus-visible {
     border-color: var(--cs-accent-dark-lg);
+    outline: none;
 }
 /*General dark mode*/
 @media(prefers-color-scheme: dark) {
