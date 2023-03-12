@@ -38,3 +38,20 @@
     font-display: swap;
     font-style: italic;
 }
+
+/*Custom Propertie Definitons*/
+:root {
+    --ft-Epilogue: 'Epilogue', Arial, Helvetica, sans-serif, system-ui;
+    --ft-Anybody: 'Anybody', Arial, Helvetica, sans-serif, system-ui;
+    --JetBrainsMono: 'JetBrainsMono', 'Courier New', Courier, monospace;
+}
+
+.ft-epilogue {
+    font-family: var(--ft-Epilogue);
+}
+.ft-anybody {
+    font-family: var(--ft-Anybody);
+}
+.ft-jetbrains-mono {
+    font-family: var(--JetBrainsMono);
+}
