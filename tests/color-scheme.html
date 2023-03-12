@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../color-scheme.css">
+    <link rel="stylesheet" href="../fonts.css">
+    <style>
+        :root {
+            font-family: sans-serif;
+        }  
+        h1 {
+            text-align: center;
+        }
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        main {
+            background-color: hsl(0 0% 0%);
+            padding-inline: .5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(60ch, 1fr));
+            gap: .5rem;
+        }
+        section {
+            padding: .5rem;
+        }
+        p, blockquote {
+            column-width: 50ch;
+        }
+        input {
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>    
+        <h1>Color Scheme check</h1>
+        <nav>
+            <h2>Overview</h2>
+            <ul>
+                <li>
+                    <a href="#cs-default">Default Scheme</a>
+                </li>
+                <li>
+                    <a href="#cs-accent-blue">Blue Accent</a>
+                </li>
+                <li>
+                    <a href="#cs-accent-blue-yellow">Blue Yellow Accent</a>
+                </li>
+                <li>
+                    <a href="#cs-accent-blue-yellow-intense">Blue Yellow Accent</a>
+                </li>
+                <li>
+                    <a href="#cs-main-blue">Blue Main colors</a>
+                </li>
+                <li>
+                    <a href="#cs-all-blue">All Blue</a>
+                </li>
+                <li>
+                    <a href="#cs-main-blue-accent-yellow">Blue main colors with yellow/blue accent</a>
+                </li>
+                <li>
+                    <a href="#cs-main-blue-accent-yellow-intense">Blue main colors with yellow/blue intense accent</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cs cs-default" id="cs-default">
+            <h2>Default Color Scheme</h2>
+            
+        </section>
+        <section class="cs cs-accent-blue" id="cs-accent-blue">
+            <h2>Blue Color Accent</h2>
+        </section>
+        <section class="cs cs-accent-blue-yellow" id="cs-accent-blue-yellow">
+            <h2>Blue Yellow Color Accent</h2>
+        </section>
+        <section class="cs cs-accent-blue-yellow-intense" id="cs-accent-blue-yellow-intense">
+            <h2>Blue Yellow Color Intense Accent</h2>
+        </section>
+        <section class="cs cs-main-blue" id="cs-main-blue">
+            <h2>Blue Main colors</h2>
+        </section>
+        <section class="cs cs-main-blue cs-accent-blue" id="cs-all-blue">
+            <h2>Blue Main colors and accent</h2>
+        </section>
+        <section class="cs cs-main-blue cs-accent-blue-yellow" id="cs-main-blue-accent-yellow">
+            <h2>Blue Main colors and Blue/Yellow accent</h2>
+        </section>
+        <section class="cs cs-main-blue cs-accent-blue-yellow-intense" id="cs-main-blue-accent-yellow-intense">
+            <h2>Blue Main colors and Blue/Yellow intense accent</h2>
+        </section>
+    </main>
+    <template id="mode-template">
+        <a href="#">Back to start</a>
+        <hr>
+        <article>
+            <h3>Text</h3>
+            <p>
+                Veniam aute mollit ullamco enim in cupidatat Lorem consectetur. Adipisicing ex duis Lorem voluptate occaecat proident cillum enim cupidatat esse nulla commodo fugiat. Esse dolor pariatur officia enim cillum fugiat laboris esse pariatur dolor commodo dolore ullamco sit. Nisi velit adipisicing aliqua cupidatat irure labore officia ullamco eiusmod culpa aliquip non aliquip reprehenderit. Culpa ullamco ullamco tempor elit sint irure ut in ut laboris id ex.
+            </p>
+            <hr>
+            <span>
+                Regular <b>Bold</b> Regular <i>italic</i> Regular <u>Underlined</u> Regular <em>Emphasized</em> Regular <strong>Strong</strong>
+                <q>Quote and Quote</q>
+            </span>
+            <hr>
+            <details>
+                <summary>Blockquote</summary>
+                <blockquote>
+                    Reprehenderit tempor proident fugiat non dolor exercitation occaecat do adipisicing tempor eu. Nisi anim qui anim minim ad aliqua qui duis. Qui culpa sit sit veniam cillum in eu. <br>
+                    Tempor enim laboris consectetur cupidatat magna excepteur voluptate labore. Ea cillum consequat duis laboris aute ut magna Lorem non Lorem ut aliqua. Eiusmod cupidatat aliquip do elit sunt do. Mollit occaecat ullamco veniam non est nisi incididunt Lorem nostrud Lorem. Aliqua id culpa magna ea ut consectetur magna fugiat exercitation voluptate qui. Sint ex ex nostrud dolor aute reprehenderit elit duis elit sit tempor.
+                    <br>
+                    <cite>--Lorem Impsum Extension</cite>
+                </blockquote>
+            </details>
+        </article>
+        <hr>
+        <details>
+            <summary>Example Form</summary>
+            <form action="#">
+                <textarea name="area" cols="30" rows="2" style="display: inline;">Text Area</textarea><br>
+                <input type="checkbox" name="check">Checkbox <br>
+                <input type="text" name="text" placeholder="Text">
+                <input type="email" placeholder="Email"> 
+                <input type="password" placeholder="Password"> <br>
+                <input type="number" maxlength="2"> <input type="range" min="0" max="5" step="1"> Range <br>
+                <input type="color"> Color Picker <br>
+                <input type="radio" name="radio" checked="checked""><input type="radio" name="radio"> Radio Buttons <br>
+                <input type="date"> Datepicker <br>
+                <input type="datetime"> Datetime <br>
+                <input type="datetime-local"> Datetime Local <br>
+                <input type="month"> Month <br>
+                <input type="week"> Week <br>
+                <input type="time"> Time <br>
+                <input type="file"> File <br>
+                <input type="button" value="Button" role="none"> <input type="reset" value="Reset"> <input type="submit" value="Submit">
+            </form>
+        </details>
+    </template>
+    <template id="cs-template">
+            <!--<section class="mode">
+                <h3>System Default</h3>
+            </section>
+            <hr>-->
+            <section class="cs-light mode">
+                <h3>Light Mode</h3>
+            </section>
+            <section class="cs-dark mode">
+                <h3>Dark Mode</h3>
+            </section>
+    </template>
+</body>
+
+<script>
+    
+    const sec_cs = document.getElementsByClassName("cs");
+    const cs_template = document.getElementById("cs-template");
+    for (let index = 0; index < sec_cs.length; index++) {
+        const element = sec_cs[index];
+        const clone = cs_template.content.cloneNode(true);
+        element.appendChild(clone)
+    }
+    const sec_mode = document.getElementsByClassName("mode");
+    const mode_template = document.getElementById("mode-template");
+    for (let index = 0; index < sec_mode.length; index++) {
+        const element = sec_mode[index];
+        const clone = mode_template.content.cloneNode(true);
+        element.appendChild(clone)
+    }
+</script>
+</html>
