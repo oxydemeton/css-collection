@@ -63,12 +63,32 @@ cite, strong {
     color: var(--cs-accent-dark-lg);
 }
 textarea {
-    border-color: var(--cs-accent-dark-sm);
+    border-color: var(--cs-accent-light-sm);
 }
 textarea:focus-visible {
-    border-color: var(--cs-accent-dark-lg);
+    border-color: var(--cs-accent-light-lg);
     outline: none;
 }
+input[type=text], input[type=email], input[type=tel], input[type=search],
+input[type=password], input[type=number], input[type=color],
+input[type=date], input[type=datetime], input[type=datetime-local],
+input[type=month], input[type=week], input[type=time] {
+    border-color: var(--cs-accent-light-sm);
+}
+input[type=text]:focus-visible, input[type=email]:focus-visible, input[type=tel]:focus-visible, input[type=search]:focus-visible,
+input[type=password]:focus-visible, input[type=number]:focus-visible, input[type=color]:focus-visible,
+input[type=date]:focus-visible, input[type=datetime]:focus-visible, input[type=datetime-local]:focus-visible,
+input[type=month]:focus-visible, input[type=week]:focus-visible, input[type=time]:focus-visible {
+    border-color: var(--cs-accent-dark-sm);
+}
+
+button:hover, button:focus-visible,
+input[type=button]:hover, input[type=button]:focus-visible,
+input[type=submit]:hover, input[type=submit]:focus-visible,
+input[type=reset]:hover, input[type=reset]:focus-visible {
+    outline-color: var(--cs-accent-dark-lg);
+}
+
 /*General dark mode*/
 @media(prefers-color-scheme: dark) {
     html, .cs-dark {
@@ -80,6 +100,32 @@ textarea:focus-visible {
     }
     cite, strong {
         color: var(--cs-accent-light-lg);
+    }
+    textarea {
+        border-color: var(--cs-accent-dark-sm);
+    }
+    textarea:focus-visible {
+        border-color: var(--cs-accent-dark-lg);
+        outline: none;
+    }
+    input[type=text], input[type=email], input[type=tel], input[type=search],
+    input[type=password], input[type=number], input[type=color],
+    input[type=date], input[type=datetime], input[type=datetime-local],
+    input[type=month], input[type=week], input[type=time] {
+        border-color: var(--cs-accent-dark-sm);
+    }
+    input[type=text]:focus-visible, input[type=email]:focus-visible, input[type=tel]:focus-visible, input[type=search]:focus-visible,
+    input[type=password]:focus-visible, input[type=number]:focus-visible, input[type=color]:focus-visible,
+    input[type=date]:focus-visible, input[type=datetime]:focus-visible, input[type=datetime-local]:focus-visible,
+    input[type=month]:focus-visible, input[type=week]:focus-visible, input[type=time]:focus-visible {
+        border-color: var(--cs-accent-light-sm);
+    }
+    
+    button:hover, button:focus-visible,
+    input[type=button]:hover, input[type=button]:focus-visible,
+    input[type=submit]:hover, input[type=submit]:focus-visible,
+    input[type=reset]:hover, input[type=reset]:focus-visible {
+        outline-color: var(--cs-accent-light-lg);
     }
 }
 
@@ -95,6 +141,34 @@ textarea:focus-visible {
     color: var(--cs-accent-dark-lg);
 }
 
+.cs-light textarea {
+    border-color: var(--cs-accent-light-sm);
+}
+.cs-light textarea:focus-visible {
+    border-color: var(--cs-accent-light-lg);
+    outline: none;
+}
+.cs-light input[type=text], .cs-light input[type=email], .cs-light input[type=tel], .cs-light input[type=search],
+.cs-light input[type=password], .cs-light input[type=number], .cs-light input[type=color],
+.cs-light input[type=date], .cs-light input[type=datetime], .cs-light input[type=datetime-local],
+.cs-light input[type=month], .cs-light input[type=week], .cs-light input[type=time] {
+    border-color: var(--cs-accent-light-sm);
+}
+.cs-light input[type=text]:focus-visible, .cs-light input[type=email]:focus-visible, .cs-light input[type=tel]:focus-visible, .cs-light input[type=search]:focus-visible,
+.cs-light input[type=password]:focus-visible, .cs-light input[type=number]:focus-visible, .cs-light input[type=color]:focus-visible,
+.cs-light input[type=date]:focus-visible, .cs-light input[type=datetime]:focus-visible, .cs-light input[type=datetime-local]:focus-visible,
+.cs-light input[type=month]:focus-visible, .cs-light input[type=week]:focus-visible, .cs-light input[type=time]:focus-visible {
+    border-color: var(--cs-accent-dark-sm);
+}
+
+.cs-light button:hover, .cs-light button:focus-visible,
+.cs-light input[type=button]:hover, .cs-light input[type=button]:focus-visible,
+.cs-light input[type=submit]:hover, .cs-light input[type=submit]:focus-visible,
+.cs-light input[type=reset]:hover, .cs-light input[type=reset]:focus-visible {
+    outline-color: var(--cs-accent-dark-lg);
+}
+
+
 /*Special dark mode*/
 .cs-dark a,
 .cs-dark abbr,
@@ -107,3 +181,29 @@ textarea:focus-visible {
     color: var(--cs-accent-light-lg);
 }
 
+.cs-dark textarea {
+    border-color: var(--cs-accent-dark-sm);
+}
+.cs-dark textarea:focus-visible {
+    border-color: var(--cs-accent-dark-lg);
+    outline: none;
+}
+.cs-dark input[type=text], .cs-dark input[type=email], .cs-dark input[type=tel], .cs-dark input[type=search],
+.cs-dark input[type=password], .cs-dark input[type=number], .cs-dark input[type=color],
+.cs-dark input[type=date], .cs-dark input[type=datetime], .cs-dark input[type=datetime-local],
+.cs-dark input[type=month], .cs-dark input[type=week], .cs-dark input[type=time] {
+    border-color: var(--cs-accent-dark-sm);
+}
+.cs-dark input[type=text]:focus-visible, .cs-dark input[type=email]:focus-visible, .cs-dark input[type=tel]:focus-visible, .cs-dark input[type=search]:focus-visible,
+.cs-dark input[type=password]:focus-visible, input[type=number]:focus-visible, .cs-dark input[type=color]:focus-visible,
+.cs-dark input[type=date]:focus-visible, .cs-dark input[type=datetime]:focus-visible, .cs-dark input[type=datetime-local]:focus-visible,
+.cs-dark input[type=month]:focus-visible, .cs-dark input[type=week]:focus-visible, .cs-dark input[type=time]:focus-visible {
+    border-color: var(--cs-accent-light-sm);
+}
+
+.cs-dark button:hover, .cs-dark button:focus-visible,
+.cs-dark input[type=button]:hover, .cs-dark input[type=button]:focus-visible,
+.cs-dark input[type=submit]:hover, .cs-dark input[type=submit]:focus-visible,
+.cs-dark input[type=reset]:hover, .cs-dark input[type=reset]:focus-visible {
+    outline-color: var(--cs-accent-light-lg);
+}
