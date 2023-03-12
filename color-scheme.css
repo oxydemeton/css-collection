@@ -27,7 +27,7 @@
     --cs-accent-light-lg: hsl(0 0% 50%);
 }
 .cs-accent-blue {
-    --cs-accent-dark-sm: hsl(240 75% 30%);
+    --cs-accent-dark-sm: hsl(240 60% 30%);
     --cs-accent-dark-lg: hsl(240 75% 40%);
     --cs-accent-light-sm: hsl(240 75% 85%);
     --cs-accent-light-lg: hsl(240 75% 70%);
