@@ -1,26 +1,40 @@
-@font-face {
+/*Variable Fonts*/
+@font-face { /*Epilogue*/
     font-family: 'Epilogue';
     src: url('fonts/Epilogue.woff2') format('woff2-variations');
     font-weight: 100 900;
     font-display: swap;
 }
-@font-face {
+@font-face {/*Epilogue Italic*/
     font-family: 'Epilogue';
     src: url('fonts/Epilogue-Italic.woff2') format('woff2-variations');
     font-weight: 100 900;
     font-display: swap;
     font-style: italic;
 }
-@font-face {
+@font-face {/*Anybody*/
     font-family: 'Anybody';
     src: url('fonts/Anybody.ttf') format('woff2-variations');
     font-weight: 100 900;
     font-display: swap;
 }
-@font-face {
+@font-face {/*Anybody Italic*/
     font-family: 'Anybody';
     src: url('fonts/Anybody-Italic.ttf') format('woff2-variations');
     font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {/*JetBrainsMono*/
+    font-family: 'JetBrainsMono';
+    src: url('fonts/JetBrainsMono.ttf') format('woff2-variations');
+    font-weight: 100 800;
+    font-display: swap;
+}
+@font-face { /*JetBrainsMono Italic*/
+    font-family: 'JetBrainsMono';
+    src: url('fonts/JetBrainsMono-Italic.ttf') format('woff2-variations');
+    font-weight: 100 800;
     font-display: swap;
     font-style: italic;
 }
