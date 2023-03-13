@@ -3,9 +3,9 @@
     --cs-main-dark: var(--cs-cfg-main-dark, hsl(0 0% 10%));
     --cs-main-light: var(--cs-cfg-main-light, hsl(0 0% 90%));
     --cs-accent-dark-sm: var(--cs-cfg-accent-dark-sm, hsl(0 0% 25%));
-    --cs-accent-dark-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 50%));
+    --cs-accent-dark-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 40%));
     --cs-accent-light-sm: var(--cs-cfg-accent-light-sm, hsl(0 0% 80%));
-    --cs-accent-light-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 50%));
+    --cs-accent-light-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 55%));
 
     /*Root Css*/
     color-scheme: dark light;
@@ -31,11 +31,11 @@
     --cs-accent-dark-sm: hsl(240 75% 34%);
     --cs-accent-dark-lg: hsl(240 75% 44%);
     --cs-accent-light-sm: hsl(240 75% 74%);
-    --cs-accent-light-lg: hsl(240 75% 69%);
+    --cs-accent-light-lg: hsl(240 75% 70%);
 }
 .cs-accent-blue-yellow {
     --cs-accent-dark-sm: hsl(242 89% 30%);
-    --cs-accent-dark-lg: hsl(50 89% 25%);
+    --cs-accent-dark-lg: hsl(50 89% 23%);
     --cs-accent-light-sm: hsl(242 89% 75%);
     --cs-accent-light-lg: hsl(50 89% 65%);
 }
