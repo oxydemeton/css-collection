@@ -161,3 +161,13 @@ tr > :first-child:not([colspan])  {
         border-block-end: .1rem solid;
     }
 }
+
+summary::marker {
+    font-family: Arial, sans-serif;
+    content: '▶';
+    width: 1ch;
+    height: 1ch;
+}
+details[open] > summary::marker {
+    content: '▼';
+}
