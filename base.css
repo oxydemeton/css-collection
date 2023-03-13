@@ -6,12 +6,14 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 1em;
+    --ft-size-nm: 1.125rem;
+    --ft-size-nm: clamp(1rem, .1vw + .975rem, 2.5rem);
+    --ft-line-h-nm: 1.6rem;
+    --ft-line-h-nm: clamp(1.25rem, .1vw + 1.2rem, 3rem);
 }
 body {
-    font-size: 1.125rem;
-    font-size: clamp(1rem, .1vw + .975rem, 2.5rem);
-    line-height: 1.6rem;
-    line-height: clamp(1.25rem, .1vw + 1.2rem, 3rem);
+    font-size: var(--ft-size-nm);
+    line-height: var(--ft-line-h-nm);
 }
 a {
     all: unset;
@@ -22,6 +24,7 @@ a {
 a:hover, a:focus-visible, a:active {
     font-style: italic;
 }
+
 h1, h2, h3, h4, h5, h6 {
     margin-inline: 0;
     margin-block: 1em;
