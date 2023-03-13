@@ -2,7 +2,21 @@
     margin-block-start: 0.83em;
     margin-inline-end: 0.83em;
 }
-
+.colls-4-25ch {
+    columns: 4 25ch;
+}
+.colls-4-33ch {
+    columns: 4 33ch;
+}
+.colls-3-33ch {
+    columns: 3 33ch;
+}
+.colls-3-45ch {
+    columns: 3 45ch;
+}
+.colls-2-45ch {
+    columns: 2 45ch;
+}
 
 body.square-body  {
     max-width: min(100vh, 100vw);
