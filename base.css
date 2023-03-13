@@ -134,3 +134,29 @@ input:where([type="button"],[type=submit],[type=reset]) {
     cursor: not-allowed;
     outline: none;
 }
+
+thead {
+    text-decoration: underline;
+}
+th {
+    font-weight: 700;
+    text-align: center;
+}
+td {
+    font-weight: 400;
+
+}
+th, td{
+    padding: .25em;
+    border-bottom: .1rem solid black;
+    text-align: center;
+}
+tr > :first-child:not([colspan])  {
+    text-align: start;
+}
+@supports(border-block: inherit) {
+    th, td{
+        border-bottom: 0;
+        border-block-end: .1rem solid black;
+    }
+}
