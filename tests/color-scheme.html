@@ -146,6 +146,65 @@
                 <input type="button" value="Button" role="none"> <input type="reset" value="Reset"> <input type="submit" value="Submit"> <button disabled="disabled">Disabled</button>
             </form>
         </details>
+        <hr>
+            <details>
+                <summary>Lists</summary>
+                <summary>Ul</summary>
+                <ul>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>
+                        Third Item
+                        <ul>
+                            <li>First Inside</li>
+                            <li>
+                                Second Inside
+                                <ul>
+                                    <li>Next Inside</li>
+                                    <li>Next Inside</li>
+                                </ul>
+                            </li>
+                            <li>Third Inside</li>
+                        </ul>
+                    </li>
+                    <li>Fourth Item</li>
+                </ul>
+                <summary>Ol</summary>
+                <ol>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>
+                        Third Item
+                        <ol type="a">
+                            <li>First Inside</li>
+                            <li>
+                                Second Inside
+                                <ol type="I">
+                                    <li>Next Inside</li>
+                                    <li>Next Inside</li>
+                                </ol>
+                            </li>
+                            <li>Third Inside</li>
+                        </ol>
+                    </li>
+                    <li>Fourth Item</li>
+                </ol>
+            </details>
+            <details>
+                <summary>Table</summary>
+                <table>
+                    <thead>
+                        <tr><th colspan="3">Table Head</th></tr>
+                        <tr><th></th> <th>First Col</th> <th>Second Col</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th>First Row</th><td>First Data</td> <td>Second Data</td></tr>
+                        <tr><th>Second Row</th><td>First Data</td> <td>Second Data</td></tr>
+                        <tr><th>Third Row</th><td>First Data</td> <td>Second Data</td></tr>
+                        <tr><td>3 Row</td><td>1 Data</td> <td>2 Data</td></tr>
+                    </tbody>
+                </table>
+            </details>
     </template>
     <template id="cs-template">
             <!--<section class="mode">
