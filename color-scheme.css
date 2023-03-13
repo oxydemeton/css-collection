@@ -94,6 +94,10 @@ input:where([type=text], [type=email], [type=tel], [type=search],
     outline-color: var(--cs-accent-dark-lg);
 }
 
+::selection {
+    background: var(--cs-accent-light-lg);
+}
+
 /*General dark mode*/
 @media(prefers-color-scheme: dark) {
     html, .cs-dark {
@@ -134,6 +138,9 @@ input:where([type=text], [type=email], [type=tel], [type=search],
     )):is(:focus-visible, :hover) {
         outline-color: var(--cs-accent-light-lg);
     }
+    ::selection {
+        background: var(--cs-accent-dark-lg);
+    }
 }
 
 /*Special light mode */
@@ -173,6 +180,10 @@ input:where([type=text], [type=email], [type=tel], [type=search],
     outline-color: var(--cs-accent-dark-lg);
 }
 
+.cs-light ::selection {
+    background: var(--cs-accent-light-lg);
+}
+
 
 /*Special dark mode*/
 .cs-dark hr {
@@ -209,4 +220,8 @@ input:where([type=text], [type=email], [type=tel], [type=search],
         [type=button], [type=submit], input[type=reset]
     )):is(:focus-visible, :hover){
     outline-color: var(--cs-accent-light-lg);
+}
+
+.cs-dark ::selection {
+    background: var(--cs-accent-dark-lg);
 }
