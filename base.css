@@ -14,7 +14,7 @@ a {
     text-decoration: underline;
     cursor: pointer;
 }
-a:hover, a:focus-visible {
+a:hover, a:focus-visible, a:active {
     font-style: italic;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -85,14 +85,14 @@ textarea {
     padding: .1em;
     outline: none;
 }
-textarea:focus {
+textarea:focus, textarea:active {
     outline: none;
 }
 textarea:focus-visible {
     outline: 1px solid black;
 }
 
-input:where(:hover, :focus) {
+input:where(:hover, :focus, :active) {
     outline: none;
 }
 input:where([type=text], [type=email], [type=tel], [type=search],
@@ -126,7 +126,7 @@ input:where([type="button"],[type=submit],[type=reset]) {
 }
 :where(button, input:where(
     [type=button], [type=submit], input[type=reset]
-)):is(:hover, :focus-visible) {
+)):is(:hover, :focus-visible, :active) {
     outline: 2px solid black;
     border-radius: 0.25rem;
 }

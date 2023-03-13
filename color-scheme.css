@@ -75,7 +75,7 @@ cite, strong {
 textarea {
     border-color: var(--cs-accent-light-sm);
 }
-textarea:focus-visible {
+textarea:focus-visible, textarea:active {
     border-color: var(--cs-accent-light-lg);
     outline: none;
 }
@@ -88,13 +88,13 @@ input:where([type=text], [type=email], [type=tel], [type=search],
 input:where([type=text], [type=email], [type=tel], [type=search],
 [type=password], [type=number], [type=color],
 [type=date], [type=datetime], [type=datetime-local],
-[type=month], [type=week], [type=time]):focus-visible {
+[type=month], [type=week], [type=time]):is(:focus-visible, :active) {
     border-color: var(--cs-accent-light-sm);
 }
 
 :where(button, input:is(
     [type=button], [type=submit], input[type=reset]
-)):is(:focus-visible, :hover) {
+)):is(:focus-visible, :hover, :active) {
     outline-color: var(--cs-accent-dark-lg);
 }
 
@@ -124,7 +124,7 @@ input:where([type=text], [type=email], [type=tel], [type=search],
     textarea {
         border-color: var(--cs-accent-dark-sm);
     }
-    textarea:focus-visible {
+    textarea:focus-visible, textarea:active {
         border-color: var(--cs-accent-dark-lg);
         outline: none;
     }
@@ -137,13 +137,13 @@ input:where([type=text], [type=email], [type=tel], [type=search],
     input:where([type=text], [type=email], [type=tel], [type=search],
         [type=password], [type=number], [type=color],
         [type=date], [type=datetime], [type=datetime-local],
-        [type=month], [type=week], [type=time]):focus-visible {
+        [type=month], [type=week], [type=time]):is(:focus-visible, :active) {
         border-color: var(--cs-accent-light-sm);
     }
     
     :where(button, input:is(
         [type=button], [type=submit], input[type=reset]
-    )):is(:focus-visible, :hover) {
+    )):is(:focus-visible, :hover, :active) {
         outline-color: var(--cs-accent-light-lg);
     }
     ::selection {
@@ -167,7 +167,7 @@ input:where([type=text], [type=email], [type=tel], [type=search],
 .cs-light textarea {
     border-color: var(--cs-accent-light-sm);
 }
-.cs-light textarea:focus-visible {
+.cs-light textarea:where(:focus-visible, :active) {
     border-color: var(--cs-accent-light-lg);
     outline: none;
 }
@@ -180,13 +180,13 @@ input:where([type=text], [type=email], [type=tel], [type=search],
 .cs-light input:where([type=text], [type=email], [type=tel], [type=search],
     [type=password], [type=number], [type=color],
     [type=date], [type=datetime], [type=datetime-local],
-    [type=month], [type=week], [type=time]):focus-visible {
+    [type=month], [type=week], [type=time]):is(:focus-visible,:active) {
     border-color: var(--cs-accent-dark-sm);
 }
 
 .cs-light :where(button, input:is(
         [type=button], [type=submit], input[type=reset]
-    )):is(:focus-visible, :hover) {
+    )):is(:focus-visible, :hover, :active) {
     outline-color: var(--cs-accent-dark-lg);
 }
 
@@ -211,7 +211,7 @@ input:where([type=text], [type=email], [type=tel], [type=search],
 .cs-dark textarea {
     border-color: var(--cs-accent-dark-sm);
 }
-.cs-dark textarea:focus-visible {
+.cs-dark textarea:where(:focus-visible, :active) {
     border-color: var(--cs-accent-dark-lg);
     outline: none;
 }
@@ -224,13 +224,13 @@ input:where([type=text], [type=email], [type=tel], [type=search],
 .cs-dark input:where([type=text], [type=email], [type=tel], [type=search],
     [type=password], [type=number], [type=color],
     [type=date], [type=datetime], [type=datetime-local],
-    [type=month], [type=week], [type=time]):focus-visible {
+    [type=month], [type=week], [type=time]):is(:focus-visible, :active) {
     border-color: var(--cs-accent-light-sm);
 }
 
 .cs-dark :where(button, input:is(
         [type=button], [type=submit], input[type=reset]
-    )):is(:focus-visible, :hover){
+    )):is(:focus-visible, :hover, :active){
     outline-color: var(--cs-accent-light-lg);
 }
 
