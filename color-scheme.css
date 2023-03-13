@@ -106,6 +106,13 @@ th, td {
     border-color: var(--cs-accent-dark-sm);
 }
 
+details summary:first-of-type::marker {
+    color: var(--cs-accent-dark-sm);
+}
+details[open] summary:first-of-type::marker {
+    color: var(--cs-accent-dark-lg);
+}
+
 /*General dark mode*/
 @media(prefers-color-scheme: dark) {
     html, .cs-dark {
@@ -155,6 +162,12 @@ th, td {
     }
     th, td {
         border-color: var(--cs-accent-light-sm);
+    }
+    details summary:first-of-type::marker {
+        color: var(--cs-accent-light-sm);
+    }
+    details[open] summary:first-of-type::marker {
+        color: var(--cs-accent-light-lg);
     }
 }
 
@@ -206,6 +219,13 @@ th, td {
     border-color: var(--cs-accent-dark-sm);
 }
 
+.cs-light details summary:first-of-type::marker {
+    color: var(--cs-accent-dark-sm);
+}
+.cs-light details[open] summary:first-of-type::marker {
+    color: var(--cs-accent-dark-lg);
+}
+
 
 /*Special dark mode*/
 .cs-dark hr {
@@ -253,4 +273,11 @@ th, td {
 .cs-dark th,
 .cs-dark td {
     border-color: var(--cs-accent-light-sm);
+}
+
+.cs-dark details summary:first-of-type::marker {
+    color: var(--cs-accent-light-sm);
+}
+.cs-dark details[open] summary:first-of-type::marker {
+    color: var(--cs-accent-light-lg);
 }
