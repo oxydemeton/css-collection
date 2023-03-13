@@ -34,10 +34,10 @@
     --cs-accent-light-lg: hsl(240 75% 69%);
 }
 .cs-accent-blue-yellow {
-    --cs-accent-dark-sm: hsl(240 60% 30%);
-    --cs-accent-dark-lg: hsl(49 80% 30%);
-    --cs-accent-light-sm: hsl(240 60% 85%);
-    --cs-accent-light-lg: hsl(49 60% 75%);
+    --cs-accent-dark-sm: hsl(242 89% 30%);
+    --cs-accent-dark-lg: hsl(50 89% 25%);
+    --cs-accent-light-sm: hsl(242 89% 75%);
+    --cs-accent-light-lg: hsl(50 89% 65%);
 }
 .cs-accent-blue-yellow-intense {
     --cs-accent-dark-sm: hsl(240 100% 40%);
