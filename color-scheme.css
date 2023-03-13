@@ -3,7 +3,7 @@
     --cs-main-dark: var(--cs-cfg-main-dark, hsl(0 0% 10%));
     --cs-main-light: var(--cs-cfg-main-light, hsl(0 0% 90%));
     --cs-accent-dark-sm: var(--cs-cfg-accent-dark-sm, hsl(0 0% 25%));
-    --cs-accent-dark-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 40%));
+    --cs-accent-dark-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 35%));
     --cs-accent-light-sm: var(--cs-cfg-accent-light-sm, hsl(0 0% 80%));
     --cs-accent-light-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 55%));
 
@@ -22,7 +22,7 @@
     --cs-main-dark: hsl(0 0% 10%);
     --cs-main-light: hsl(0 0% 90%);
     --cs-accent-dark-sm: hsl(0 0% 25%);
-    --cs-accent-dark-lg: hsl(0 0% 40%);
+    --cs-accent-dark-lg: hsl(0 0% 35%);
     --cs-accent-light-sm: hsl(0 0% 80%);
     --cs-accent-light-lg: hsl(0 0% 55%);
 }
