@@ -3,10 +3,8 @@
     margin-inline-end: 0.83em;
 }
 
-.max-w-square {
-    max-width: min(100cqi, 100cqb);
-}
-body.max-w-square  {
+
+body.square-body  {
     max-width: min(100vh, 100vw);
     margin-inline: auto;
 }
