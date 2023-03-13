@@ -4,9 +4,14 @@
 }
 :root {
     box-sizing: border-box;
-    line-height: 1.4em;
     scroll-behavior: smooth;
     scroll-padding-top: 1em;
+}
+body {
+    font-size: 1.125rem;
+    font-size: clamp(1rem, .1vw + .975rem, 2.5rem);
+    line-height: 1.6rem;
+    line-height: clamp(1.25rem, .1vw + 1.2rem, 3rem);
 }
 a {
     all: unset;
@@ -165,9 +170,9 @@ tr > :first-child:not([colspan])  {
 summary::marker {
     font-family: Arial, sans-serif;
     content: '▶';
-    width: 1ch;
-    height: 1ch;
+    width: 1.5ch;
+    height: 1.5ch;
 }
-details[open] summary:first-of-type:marker {
+details[open] summary:first-of-type::marker {
     content: '▼';
 }
