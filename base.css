@@ -123,11 +123,11 @@ input:where([type="button"],[type=submit],[type=reset]) {
 }
 :where(button, input:where(
     [type=button], [type=submit], input[type=reset]
-)):where(:hover, :focus-visible) {
+)):is(:hover, :focus-visible) {
     outline: 2px solid black;
     border-radius: 0.25rem;
 }
-:where(button, input:where([type="button"],[type=submit],[type=reset])):disabled {
+:where(button, input:is([type="button"],[type=submit],[type=reset])):disabled {
     cursor: not-allowed;
     outline: none;
 }
