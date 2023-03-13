@@ -7,9 +7,9 @@
     scroll-behavior: smooth;
     scroll-padding-top: 1em;
     --ft-size-nm: 1.125rem;
-    --ft-size-nm: clamp(1rem, .25vw + .9rem, 3rem);
+    --ft-size-nm: clamp(1rem, 0.25vw + 0.9rem, 3rem);
     --ft-size-md: 1.25rem;
-    --ft-size-md: clamp(1rem, .3vw + .95rem, 3rem);
+    --ft-size-md: clamp(1rem, 0.275vw + 1.1rem, 3rem);
     --ft-size-lg: 1.75rem;
     --ft-size-lg: clamp(1.5rem, 0.6vw + 1.125rem, 4rem);
     --ft-size-xl: 2.5rem;
