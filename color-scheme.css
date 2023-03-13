@@ -292,18 +292,18 @@ details[open] summary:first-of-type::marker {
 
 .btn-action,
 .cs-light .btn-action {
-    border: .2rem var(--cs-accent-dark-sm) solid;
+    border: .1rem var(--cs-accent-dark-sm) solid;
     background-color: var(--cs-accent-light-lg);
     outline-color: var(--cs-main-dark) !important;
 }
 .cs-dark .btn-action {
-    border: .2rem var(--cs-accent-light-sm) solid;
+    border: .1rem var(--cs-accent-light-sm) solid;
     background-color: var(--cs-accent-dark-lg);
     outline-color: var(--cs-main-light) !important;
 }
 @media(prefers-color-scheme: dark) {
     .btn-action {
-        border: .2rem var(--cs-accent-light-sm) solid;
+        border: .1rem var(--cs-accent-light-sm) solid;
         background-color: var(--cs-accent-dark-lg);
         outline-color: var(--cs-main-light) !important;
     }
