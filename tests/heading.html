@@ -8,35 +8,106 @@
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="../color-scheme.css">
     <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../util.css">
+    <style>
+        :root {
+            font-family: sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="square-body">
     <head>
         <h1>Heading Style Test</h1>
         <nav>
             <a href="index.html">Back to Overview</a>
             <ul>
-                <li><a href="#size-comp">Size Comparison</a></li>
+                <li><a href="#size-font">Size/Font Comparison</a></li>
             </ul>
         </nav>
     </head>
+    <br><hr><hr><br>
     <main>
-        <section id="size-comp">
-            <h2>Size Comparison</h2>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><h1>Heading 1</h1></td>
-                        <td><h2>Heading 2</h2></td>
-                        <td><h3>Heading 3</h3></td>
-                        <td><h4>Heading 4</h4></td>
-                        <td><h5>Heading 5</h5></td>
-                        <td><h6>Heading 6</h6></td>
-                    </tr>
-                </tbody>
-            </table>
+        <section id="size-font">
+            <h2>Size/Font Comparison</h2>
+            <details>
+                <summary>
+                    Font: Serif
+                </summary>
+                <style>
+                    #size-table-serif {
+                        font-family: serif;
+                    }
+                </style>
+                <div class="h-table" id="size-table-serif"></div>
+            </details> <br>
+            <details>
+                <summary>
+                    Font: Sans-Serif
+                </summary>
+                <style>
+                    #size-table-sans {
+                        font-family: sans-serif;
+                    }
+                </style>
+                <div class="h-table" id="size-table-sans"></div>
+            </details><br>
+            <details>
+                <summary>
+                    Font: Mono
+                </summary>
+                <style>
+                    #size-table-mono {
+                        font-family: monospace;
+                    }
+                </style>
+                <div class="h-table" id="size-table-mono"></div>
+            </details>
         </section>
-        <a href="#">Back to start</a>
-        <hr>
+        <br><br>
+        <hr><a href="#">Back to start</a><hr>
     </main>
+
+    <template id="table-template">
+        <table>
+            <tbody>
+                <tr>
+                    <th>Regular Text:</th>
+                    <td>Regular Text</td>
+                    <td>Regular Text</td>
+                    <td>Regular Text</td>
+                    <td>Regular Text</td>
+                    <td>Regular Text</td>
+                    <td>Regular Text</td>
+                </tr>
+                <tr>
+                    <th>H1-H6:</th>
+                    <td><h1>Heading 1</h1></td>
+                    <td><h2>Heading 2</h2></td>
+                    <td><h3>Heading 3</h3></td>
+                    <td><h4>Heading 4</h4></td>
+                    <td><h5>Heading 5</h5></td>
+                    <td><h6>Heading 6</h6></td>
+                </tr>
+                <tr>
+                    <th>H2-Regular:</th>
+                    <td><h2>Heading 2</h2></td>
+                    <td><h3>Heading 3</h3></td>
+                    <td><h4>Heading 4</h4></td>
+                    <td><h5>Heading 5</h5></td>
+                    <td><h6>Heading 6</h6></td>
+                    <td>Regular Text</td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+    <script>
+        const sec_cs = document.getElementsByClassName("h-table");
+        const cs_template = document.getElementById("table-template");
+        for (let index = 0; index < sec_cs.length; index++) {
+            const element = sec_cs[index];
+            const clone = cs_template.content.cloneNode(true);
+            element.appendChild(clone)
+        }
+    </script>
 </body>
 </html>
