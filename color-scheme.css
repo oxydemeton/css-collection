@@ -39,12 +39,7 @@
     --cs-accent-light-sm: hsl(242 89% 75%);
     --cs-accent-light-lg: hsl(50 89% 65%);
 }
-.cs-accent-blue-yellow-intense {
-    --cs-accent-dark-sm: hsl(240 100% 40%);
-    --cs-accent-dark-lg: hsl(49 100% 40%);
-    --cs-accent-light-sm: hsl(240 100% 75%);
-    --cs-accent-light-lg: hsl(49 100% 75%);
-}
+
 /*Main Colors*/
 .cs-main-blue {
     --cs-main-dark: hsl(240 20% 10%);
