@@ -3,6 +3,14 @@
     margin-inline-end: 0.83em;
 }
 
+.max-w-square {
+    max-width: min(100cqi, 100cqb);
+}
+body.max-w-square  {
+    max-width: min(100vh, 100vw);
+    margin-inline: auto;
+}
+
 .sr-only { /*From https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034*/
 	border: 0 !important;
 	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
