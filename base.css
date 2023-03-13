@@ -99,11 +99,6 @@ q::before {
 q::after {
     content: close-quote;
 }
-details > summary:first-of-type {
-    display: list-item;
-    counter-increment: list-item 0;
-    list-style: inside disclosure-closed;
-}
 textarea {
     writing-mode: horizontal-tb !important;
     font-weight: normal;
@@ -210,6 +205,13 @@ tr > :first-child:not([colspan])  {
         border-bottom: 0;
         border-block-end: .1rem solid;
     }
+}
+
+details > summary:first-of-type {
+    display: list-item;
+    counter-increment: list-item 0;
+    list-style: inside disclosure-closed;
+    cursor: pointer;
 }
 
 summary::marker {
