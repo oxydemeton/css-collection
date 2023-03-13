@@ -168,6 +168,6 @@ summary::marker {
     width: 1ch;
     height: 1ch;
 }
-details[open] > summary::marker {
+details[open] summary:first-of-type:marker {
     content: '▼';
 }
