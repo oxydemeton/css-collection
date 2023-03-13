@@ -89,18 +89,18 @@ textarea:focus-visible {
     outline: 1px solid black;
 }
 
-input, input:hover, input:focus {
+input:where(:hover, :focus) {
     outline: none;
 }
-input[type=text], input[type=email], input[type=tel], input[type=search],
-input[type=password], input[type=number], input[type=color],
-input[type=date], input[type=datetime], input[type=datetime-local],
-input[type=month], input[type=week], input[type=time] {
+input:where([type=text], [type=email], [type=tel], [type=search],
+[type=password], [type=number], [type=color],
+[type=date], [type=datetime], [type=datetime-local],
+[type=month], [type=week], [type=time]) {
     outline: none;
     border: 1px solid black;
     cursor: text;
 }
-input[type=file], input[type=radio], input[type=color], input[type=checkbox] {
+input:where([type=file], [type=radio], [type=color], [type=checkbox]) {
     cursor: pointer;
 }
 input[type=range] {
@@ -109,9 +109,7 @@ input[type=range] {
 
 
 button,
-input[type="button"],
-input[type=submit],
-input[type=reset] {
+input:where([type="button"],[type=submit],[type=reset]) {
     padding: 0;
     margin: 0;
     padding-inline: .5ch;
@@ -123,14 +121,13 @@ input[type=reset] {
     color: inherit;
     display: inline;
 }
-button:hover, button:focus-visible,
-input[type=button]:hover, input[type=button]:focus-visible,
-input[type=submit]:hover, input[type=submit]:focus-visible,
-input[type=reset]:hover, input[type=reset]:focus-visible {
+:where(button, input:where(
+    [type=button], [type=submit], input[type=reset]
+)):where(:hover, :focus-visible) {
     outline: 2px solid black;
     border-radius: 0.25rem;
 }
-input:disabled, button:disabled {
+:where(button, input:where([type="button"],[type=submit],[type=reset])):disabled {
     cursor: not-allowed;
     outline: none;
 }
