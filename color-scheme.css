@@ -99,7 +99,7 @@ input:where([type=text], [type=email], [type=tel], [type=search],
 }
 
 ::selection {
-    background: var(--cs-accent-light-lg);
+    background-color: var(--cs-accent-light-lg);
 }
 
 th, td {
@@ -158,7 +158,7 @@ details[open] summary:first-of-type::marker {
         outline-color: var(--cs-accent-light-lg);
     }
     ::selection {
-        background: var(--cs-accent-dark-lg);
+        background-color: var(--cs-accent-dark-lg);
     }
     th, td {
         border-color: var(--cs-accent-light-sm);
@@ -211,7 +211,7 @@ details[open] summary:first-of-type::marker {
 }
 
 .cs-light ::selection {
-    background: var(--cs-accent-light-lg);
+    background-color: var(--cs-accent-light-lg);
 }
 
 .cs-light th,
@@ -267,7 +267,7 @@ details[open] summary:first-of-type::marker {
 }
 
 .cs-dark ::selection {
-    background: var(--cs-accent-dark-lg);
+    background-color: var(--cs-accent-dark-lg);
 }
 
 .cs-dark th,
@@ -280,4 +280,36 @@ details[open] summary:first-of-type::marker {
 }
 .cs-dark details[open] summary:first-of-type::marker {
     color: var(--cs-accent-light-lg);
+}
+
+
+/*Util Classes*/
+.btn-action {
+    font-size: var(--ft-size-md, 1.5rem);
+    font-weight: 800;
+    text-decoration: none;
+    padding: .75rem;
+    margin: 4px;
+    border-radius: 1rem;
+    outline-width: 3px;
+    outline-offset: -1px;
+}
+
+.btn-action,
+.cs-light .btn-action {
+    border: .2rem var(--cs-accent-dark-sm) solid;
+    background-color: var(--cs-accent-light-lg);
+    outline-color: var(--cs-main-dark) !important;
+}
+.cs-dark .btn-action {
+    border: .2rem var(--cs-accent-light-sm) solid;
+    background-color: var(--cs-accent-dark-lg);
+    outline-color: var(--cs-main-light) !important;
+}
+@media(prefers-color-scheme: dark) {
+    .btn-action {
+        border: .2rem var(--cs-accent-light-sm) solid;
+        background-color: var(--cs-accent-dark-lg);
+        outline-color: var(--cs-main-light) !important;
+    }
 }
