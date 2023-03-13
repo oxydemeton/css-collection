@@ -47,3 +47,26 @@ body.square-body  {
 	width: auto !important;
 	white-space: normal !important;
 }
+
+/*Ft Sizes */
+.ft-size-nm {
+    font-size: var(--ft-size-nm, 1.125rem);
+}
+.ft-size-lg {
+    font-size: var(--ft-size-lg, 1.75rem);
+}
+.ft-size-xl {
+    font-size: var(--ft-size-xl, 2.5rem);
+}
+.ft-size-2xl {
+    font-size: var(--ft-size-2xl, 3rem);
+}
+.ft-size-3xl {
+    font-size: var(--ft-size-3xl, 3.5rem);
+}
+.ft-size-4xl {
+    font-size: var(--ft-size-4xl, 4.5rem);
+}
+.ft-size-5xl {
+    font-size: var(--ft-size-5xl, 6rem);
+}
