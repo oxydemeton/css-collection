@@ -160,6 +160,9 @@ th, td{
     border-bottom: .1rem solid;
     text-align: center;
 }
+tr:last-of-type :is(th, td)  {
+    border-bottom: none;
+}
 tr > :first-child:not([colspan])  {
     text-align: start;
 }
