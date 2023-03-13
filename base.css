@@ -148,9 +148,8 @@ td {
 }
 th, td{
     padding: .25em;
-    border-style: solid;
     border-color: black;
-    border-bottom-width: .1rem;
+    border-bottom: .1rem solid;
     text-align: center;
 }
 tr > :first-child:not([colspan])  {
@@ -159,6 +158,6 @@ tr > :first-child:not([colspan])  {
 @supports(border-block: inherit) {
     th, td{
         border-bottom: 0;
-        border-block-end-width: .1rem;
+        border-block-end: .1rem solid;
     }
 }
