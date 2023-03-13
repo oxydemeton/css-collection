@@ -8,6 +8,8 @@
     scroll-padding-top: 1em;
     --ft-size-nm: 1.125rem;
     --ft-size-nm: clamp(1rem, .25vw + .9rem, 3rem);
+    --ft-size-md: 1.25rem;
+    --ft-size-md: clamp(1rem, .3vw + .95rem, 3rem);
     --ft-size-lg: 1.75rem;
     --ft-size-lg: clamp(1.5rem, 0.6vw + 1.125rem, 4rem);
     --ft-size-xl: 2.5rem;
@@ -25,7 +27,7 @@
 }
 body {
     font-size: var(--ft-size-nm);
-    line-height: var(--ft-line-h-nm);
+    line-height: 1.5em;
 }
 h1 {
     font-size: var(--ft-size-4xl);
@@ -48,7 +50,7 @@ h5 {
     font-weight: 700;
 }
 h6 {
-    font-size: var(--ft-size-nm);
+    font-size: var(--ft-size-md);
     font-weight: 600;
 }
 

@@ -52,6 +52,9 @@ body.square-body  {
 .ft-size-nm {
     font-size: var(--ft-size-nm, 1.125rem);
 }
+.ft-size-md {
+    font-size: var(--ft-size-md, 1.5rem);
+}
 .ft-size-lg {
     font-size: var(--ft-size-lg, 1.75rem);
 }
