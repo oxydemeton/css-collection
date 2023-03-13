@@ -23,7 +23,7 @@
             background-color: hsl(0 0% 0%);
             padding-inline: .5rem;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(60ch, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%,60ch), 1fr));
             gap: .5rem;
         }
         section {
@@ -37,7 +37,7 @@
         }
     </style>
 </head>
-<body>
+<body class="square-body">
     <header>    
         <h1>Color Scheme check</h1>
         <a href="index.html">Back to overview</a>
