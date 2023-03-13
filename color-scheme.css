@@ -39,6 +39,12 @@
     --cs-accent-light-sm: hsl(242 89% 75%);
     --cs-accent-light-lg: hsl(50 89% 65%);
 }
+.cs-accent-orange {
+    --cs-accent-dark-sm: #6B3D0B;
+    --cs-accent-dark-lg: #96550F;
+    --cs-accent-light-sm: #E68217;
+    --cs-accent-light-lg: #D96421;
+}
 
 /*Main Colors*/
 .cs-main-blue {
