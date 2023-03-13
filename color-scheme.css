@@ -102,6 +102,10 @@ input:where([type=text], [type=email], [type=tel], [type=search],
     background: var(--cs-accent-light-lg);
 }
 
+th, td {
+    border-color: var(--cs-accent-dark-sm);
+}
+
 /*General dark mode*/
 @media(prefers-color-scheme: dark) {
     html, .cs-dark {
@@ -149,6 +153,9 @@ input:where([type=text], [type=email], [type=tel], [type=search],
     ::selection {
         background: var(--cs-accent-dark-lg);
     }
+    th, td {
+        border-color: var(--cs-accent-light-sm);
+    }
 }
 
 /*Special light mode */
@@ -194,6 +201,11 @@ input:where([type=text], [type=email], [type=tel], [type=search],
     background: var(--cs-accent-light-lg);
 }
 
+.cs-light th,
+.cs-light td {
+    border-color: var(--cs-accent-dark-sm);
+}
+
 
 /*Special dark mode*/
 .cs-dark hr {
@@ -236,4 +248,9 @@ input:where([type=text], [type=email], [type=tel], [type=search],
 
 .cs-dark ::selection {
     background: var(--cs-accent-dark-lg);
+}
+
+.cs-dark th,
+.cs-dark td {
+    border-color: var(--cs-accent-light-sm);
 }
