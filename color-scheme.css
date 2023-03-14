@@ -49,7 +49,7 @@
 }
 .cs-accent-blue-yellow {
     --cs-accent-dark-sm: hsl(242 89% 30%);
-    --cs-accent-dark-lg: hsl(50 89% 23%);
+    --cs-accent-dark-lg: hsl(50 80% 20%);
     --cs-accent-light-sm: hsl(242 89% 75%);
     --cs-accent-light-lg: hsl(50 89% 65%);
     --cs-selection: hsla(240, 75%, 70%, .4);
@@ -59,7 +59,7 @@
     --cs-accent-dark-lg: #854B0D;
     --cs-accent-light-sm: #C47725;
     --cs-accent-light-lg: #D96421;
-    --cs-selection: #D9642150;
+    --cs-selection: #994F0080; /*50% Alpha*/
 }
 
 /*Main Colors*/
