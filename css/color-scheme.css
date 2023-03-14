@@ -7,7 +7,7 @@
     --cs-accent-light-sm: var(--cs-cfg-accent-light-sm, hsl(0 0% 65%));
     --cs-accent-light-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 55%));
     --cs-selection: var(--cs-cfg-selection, hsla(0, 0%, 50%, .4));
-    
+    --cs-marker: var(--cs-cfg-marker, red);
     /*Root Css*/
     color-scheme: dark light;
 }
@@ -27,6 +27,7 @@
     --cs-accent-light-sm: hsl(0 0% 65%);
     --cs-accent-light-lg: hsl(0 0% 55%);
     --cs-selection: hsla(0, 0%, 40%, .4);
+    --cs-marker: red;
 }
 .cs-main-default {
     --cs-main-dark: hsl(0 0% 10%);
@@ -38,6 +39,7 @@
     --cs-accent-light-sm: hsl(0 0% 65%);
     --cs-accent-light-lg: hsl(0 0% 55%);
     --cs-selection: hsla(0, 0%, 40%, .4);
+    --cs-marker: red;
 }
 /*Accent Colors*/
 .cs-accent-blue {
@@ -46,6 +48,7 @@
     --cs-accent-light-sm: hsl(240 75% 74%);
     --cs-accent-light-lg: hsl(240 75% 70%);
     --cs-selection: hsla(240, 75%, 70%, .4);
+    --cs-marker: red;
 }
 .cs-accent-blue-yellow {
     --cs-accent-dark-sm: hsl(242 89% 30%);
@@ -53,6 +56,7 @@
     --cs-accent-light-sm: hsl(242 89% 75%);
     --cs-accent-light-lg: hsl(50 89% 65%);
     --cs-selection: hsla(240, 75%, 70%, .4);
+    --cs-marker: red;
 }
 .cs-accent-orange {
     --cs-accent-dark-sm: #6B3D0B;
@@ -60,6 +64,7 @@
     --cs-accent-light-sm: #C47725;
     --cs-accent-light-lg: #D96421;
     --cs-selection: #994F0080; /*50% Alpha*/
+    --cs-marker: lime;
 }
 
 /*Main Colors*/
@@ -71,13 +76,16 @@
 /* Apply Scheme */
 
 @keyframes target_color_fade_scheme {
-	from { color: var(--cs-selection); }
+	from { color: var(--cs-marker); }
 	to { color: inherit; }
 }
 :target {
-    color: var(--cs-selection);
+    color: var(--cs-marker);
     animation: target_color_fade_scheme 2s forwards alternate;
     animation-delay: 5s;
+}
+marker {
+    background-color: var(--cs-marker);
 }
 
 html, .cs-light {
