@@ -84,7 +84,7 @@ a, abbr, q, em {
 cite, strong {
     color: var(--cs-accent-dark-lg);
 }
-textarea {
+textarea, fieldset {
     border-color: var(--cs-accent-light-sm);
 }
 textarea:focus-visible, textarea:active {
@@ -125,6 +125,7 @@ details[open] summary:first-of-type::marker {
     color: var(--cs-accent-dark-lg);
 }
 
+
 /*General dark mode*/
 @media(prefers-color-scheme: dark) {
     html, .cs-dark {
@@ -145,7 +146,7 @@ details[open] summary:first-of-type::marker {
     cite, strong {
         color: var(--cs-accent-light-lg);
     }
-    textarea {
+    textarea, fieldset {
         border-color: var(--cs-accent-dark-sm);
     }
     textarea:focus-visible, textarea:active {
@@ -198,7 +199,7 @@ details[open] summary:first-of-type::marker {
 .cs-light blockquote, .cs-light dd {
     border-color: var(--cs-accent-dark-sm);
 }
-.cs-light textarea {
+.cs-light textarea, .cs-light fieldset {
     border-color: var(--cs-accent-light-sm);
 }
 .cs-light textarea:where(:focus-visible, :active) {
@@ -254,7 +255,7 @@ details[open] summary:first-of-type::marker {
 .cs-dark blockquote, .cs-light dd {
     border-color: var(--cs-accent-light-sm);
 }
-.cs-dark textarea {
+.cs-dark textarea, .cs-dark fieldset {
     border-color: var(--cs-accent-dark-sm);
 }
 .cs-dark textarea:where(:focus-visible, :active) {
