@@ -65,3 +65,12 @@ body.square-body  {
 .ft-size-5xl {
     font-size: var(--ft-size-5xl, 6rem);
 }
+abbr.abbr-show-explanation {
+	text-decoration: none;
+}
+/*Element Specific*/
+abbr.abbr-show-explanation::after {
+	content: '('attr(title)')';
+	font-size: .75em;
+	text-decoration: none;
+}
