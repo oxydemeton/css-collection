@@ -240,3 +240,17 @@ dfn {
     font-style: inherit;
     font-weight: 600;
 }
+
+dt::after {
+    content: ':';
+}
+
+dd {
+    margin-inline: 2em;
+    padding-inline-start: .5ch;
+    border-inline-start: .25ch solid black;
+}
+dd:not(:first-child) {
+    border-top: .2ch solid black;
+    margin-top: .5em;
+}
