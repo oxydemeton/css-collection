@@ -153,6 +153,7 @@ input:where([type=text], [type=email], [type=tel], [type=search],
 [type=month], [type=week], [type=time]) {
     outline: none;
     border: 1px solid black;
+    border-radius: 4px;
     cursor: text;
 }
 input:where([type=file], [type=radio], [type=color], [type=checkbox]) {
