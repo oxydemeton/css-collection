@@ -256,7 +256,3 @@ dt::after {
     padding-inline-start: .5ch;
     border-inline-start: .25ch solid black;
 }
-:where(dd:not(:first-child)) {
-    border-top: .2ch solid black;
-    margin-top: .5em;
-}
