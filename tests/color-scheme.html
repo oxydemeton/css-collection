@@ -21,11 +21,16 @@
             margin-inline: auto;
         }
         main {
-            background-color: hsl(0 0% 0%);
+            background-color: hsl(0 0% 100%);
             padding-inline: .5rem;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(min(100%,50ch), 1fr));
             gap: .5rem;
+        }
+        @media(prefers-color-scheme: dark)  {
+            main {
+                background-color: hsl(0 0% 0%);
+            }
         }
         section {
             padding: .5rem;
