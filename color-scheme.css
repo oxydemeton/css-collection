@@ -69,6 +69,7 @@ blockquote {
 
 a, abbr, q, em {
     color: var(--cs-accent-dark-sm);
+    text-decoration-color: var(--cs-accent-light-sm);
 }
 cite, strong {
     color: var(--cs-accent-dark-lg);
@@ -129,6 +130,7 @@ details[open] summary:first-of-type::marker {
     
     a, abbr, q, em {
         color: var(--cs-accent-light-sm);
+        text-decoration-color: var(--cs-accent-dark-sm);
     }
     cite, strong {
         color: var(--cs-accent-light-lg);
@@ -178,6 +180,7 @@ details[open] summary:first-of-type::marker {
 }
 .cs-light :where(a, abbr, q, em) {
     color: var(--cs-accent-dark-sm);
+    text-decoration-color: var(--cs-accent-light-sm);
 }
 .cs-light :where(cite, strong){
     color: var(--cs-accent-dark-lg);
@@ -227,13 +230,13 @@ details[open] summary:first-of-type::marker {
     color: var(--cs-accent-dark-lg);
 }
 
-
 /*Special dark mode*/
 .cs-dark hr {
     border-color: var(--cs-accent-light-sm);
 }
 .cs-dark :where(a, abbr, q, em) {
     color: var(--cs-accent-light-sm);
+    text-decoration-color: var(--cs-accent-dark-sm);
 }
 .cs-dark :where(cite, strong) {
     color: var(--cs-accent-light-lg);
@@ -282,7 +285,6 @@ details[open] summary:first-of-type::marker {
 .cs-dark details[open] summary:first-of-type::marker {
     color: var(--cs-accent-light-lg);
 }
-
 
 /*Util Classes*/
 .btn-action {
