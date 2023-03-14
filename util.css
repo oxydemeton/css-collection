@@ -20,6 +20,7 @@
 
 body.square-body  {
     max-width: min(100vh, 100vw);
+	max-width: min(100svh, 100vw);
     margin-inline: auto;
 }
 
