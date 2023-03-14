@@ -169,9 +169,11 @@ kbd {
     select:hover {
         outline-color: var(--cs-accent-light-sm);
     }
-
     kbd {
         background-color: var(--cs-accent-dark-sm);
+    }
+    select {
+        outline-color: var(--cs-accent-dark-sm);
     }
 }
 .cs-dark {
