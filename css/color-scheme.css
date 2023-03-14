@@ -41,37 +41,6 @@
     --cs-selection: hsla(0, 0%, 40%, .4);
     --cs-marker: yellow;
 }
-/*Accent Colors*/
-.cs-accent-blue {
-    --cs-accent-dark-sm: hsl(240 75% 34%);
-    --cs-accent-dark-lg: hsl(240 75% 44%);
-    --cs-accent-light-sm: hsl(240 75% 74%);
-    --cs-accent-light-lg: hsl(240 75% 70%);
-    --cs-selection: hsla(240, 75%, 70%, .4);
-    --cs-marker: yellow;
-}
-.cs-accent-blue-yellow {
-    --cs-accent-dark-sm: hsl(242 89% 30%);
-    --cs-accent-dark-lg: hsl(50 80% 20%);
-    --cs-accent-light-sm: hsl(242 89% 75%);
-    --cs-accent-light-lg: hsl(50 89% 65%);
-    --cs-selection: hsla(240, 75%, 70%, .4);
-    --cs-marker: orange;
-}
-.cs-accent-orange {
-    --cs-accent-dark-sm: #6B3D0B;
-    --cs-accent-dark-lg: #854B0D;
-    --cs-accent-light-sm: #C47725;
-    --cs-accent-light-lg: #D96421;
-    --cs-selection: #994F0080; /*50% Alpha*/
-    --cs-marker: lime;
-}
-
-/*Main Colors*/
-.cs-main-blue {
-    --cs-main-dark: hsl(240 35% 10%);
-    --cs-main-light: hsl(240, 75%, 90%);
-} 
 
 /* Apply Scheme */
 
@@ -87,20 +56,13 @@
 mark {
     background-color: var(--cs-marker);
 }
-
 html, .cs-light {
     background-color: var(--cs-main-light);
     color: var(--cs-main-dark);
 }
-
-hr {
+hr, blockquote, dd, th, td {
     border-color: var(--cs-accent-dark-sm);
 }
-
-blockquote, dd {
-    border-color: var(--cs-accent-dark-sm);
-}
-
 a, abbr, q, em {
     color: var(--cs-accent-dark-sm);
     text-decoration-color: var(--cs-accent-light-sm);
@@ -125,30 +87,22 @@ input:where([type=text], [type=email], [type=tel], [type=search],
 [type=password], [type=number], [type=color],
 [type=date], [type=datetime], [type=datetime-local],
 [type=month], [type=week], [type=time]):is(:focus-visible, :active) {
-    border-color: var(--cs-accent-light-sm);
+    border-color: var(--cs-accent-dark-sm);
 }
-
 :where(button, input:is(
     [type=button], [type=submit], input[type=reset]
 )):is(:focus-visible, :hover, :active) {
     outline-color: var(--cs-accent-dark-lg);
 }
-
 ::selection {
     background-color: var(--cs-selection);
 }
-
-th, td {
-    border-color: var(--cs-accent-dark-sm);
-}
-
 details summary:first-of-type::marker {
     color: var(--cs-accent-dark-sm);
 }
 details[open] summary:first-of-type::marker {
     color: var(--cs-accent-dark-lg);
 }
-
 select {
     outline-color: var(--cs-accent-light-sm);
 }
@@ -156,7 +110,6 @@ select:focus,
 select:hover {
     outline-color: var(--cs-accent-dark-sm);
 }
-
 kbd {
     background-color: var(--cs-accent-light-sm);
 }
@@ -167,14 +120,11 @@ kbd {
         background-color: var(--cs-main-dark);
         color: var(--cs-main-light);
     }
-    hr {
-        border-color: var(--cs-accent-light-sm);
-    }
-    blockquote, dd {
+    blockquote, dd, hr {
         border-color: var(--cs-accent-light-sm);
     }
     
-    a, abbr, q, em {
+    a, abbr, q, em, th, td {
         color: var(--cs-accent-light-sm);
         text-decoration-color: var(--cs-accent-dark-sm);
     }
@@ -205,9 +155,6 @@ kbd {
         [type=button], [type=submit], input[type=reset]
     )):is(:focus-visible, :hover, :active) {
         outline-color: var(--cs-accent-light-lg);
-    }
-    th, td {
-        border-color: var(--cs-accent-light-sm);
     }
     details summary:first-of-type::marker {
         color: var(--cs-accent-light-sm);
@@ -242,10 +189,10 @@ kbd {
 .cs-light :where(cite, strong){
     color: var(--cs-accent-dark-lg);
 }
-.cs-light blockquote, .cs-light dd {
+.cs-light :where(blockquote, dd, th, td) {
     border-color: var(--cs-accent-dark-sm);
 }
-.cs-light textarea, .cs-light fieldset {
+.cs-light :is(fieldset, textarea) {
     border-color: var(--cs-accent-light-sm);
 }
 .cs-light textarea:where(:focus-visible, :active) {
@@ -264,26 +211,17 @@ kbd {
     [type=month], [type=week], [type=time]):is(:focus-visible,:active) {
     border-color: var(--cs-accent-dark-sm);
 }
-
 .cs-light :where(button, input:is(
         [type=button], [type=submit], input[type=reset]
     )):is(:focus-visible, :hover, :active) {
     outline-color: var(--cs-accent-dark-lg);
 }
-
-
-.cs-light th,
-.cs-light td {
-    border-color: var(--cs-accent-dark-sm);
-}
-
 .cs-light details summary:first-of-type::marker {
     color: var(--cs-accent-dark-sm);
 }
 .cs-light details[open] summary:first-of-type::marker {
     color: var(--cs-accent-dark-lg);
 }
-
 .cs-light select {
     outline-color: var(--cs-accent-light-sm);
 }
@@ -296,7 +234,7 @@ kbd {
 }
 
 /*Special dark mode*/
-.cs-dark hr {
+.cs-dark :where(hr, blockquote, dd, th, td) {
     border-color: var(--cs-accent-light-sm);
 }
 .cs-dark :where(a, abbr, q, em) {
@@ -305,9 +243,6 @@ kbd {
 }
 .cs-dark :where(cite, strong) {
     color: var(--cs-accent-light-lg);
-}
-.cs-dark blockquote, .cs-light dd {
-    border-color: var(--cs-accent-light-sm);
 }
 .cs-dark textarea, .cs-dark fieldset {
     border-color: var(--cs-accent-dark-sm);
@@ -328,26 +263,17 @@ kbd {
     [type=month], [type=week], [type=time]):is(:focus-visible, :active) {
     border-color: var(--cs-accent-light-sm);
 }
-
 .cs-dark :where(button, input:is(
         [type=button], [type=submit], input[type=reset]
     )):is(:focus-visible, :hover, :active){
     outline-color: var(--cs-accent-light-lg);
 }
-
-
-.cs-dark th,
-.cs-dark td {
-    border-color: var(--cs-accent-light-sm);
-}
-
 .cs-dark details summary:first-of-type::marker {
     color: var(--cs-accent-light-sm);
 }
 .cs-dark details[open] summary:first-of-type::marker {
     color: var(--cs-accent-light-lg);
 }
-
 .cs-dark select {
     outline-color: var(--cs-accent-dark-sm);
 }
@@ -355,38 +281,6 @@ kbd {
 .cs-dark select:hover {
     outline-color: var(--cs-accent-light-sm);
 }
-
 .cs-dark kbd {
     background-color: var(--cs-accent-dark-sm);
-}
-
-/*Util Classes*/
-.btn-action {
-    font-size: var(--ft-size-md, 1.5rem);
-    font-weight: 800;
-    text-decoration: none;
-    padding: .75rem;
-    margin: 4px;
-    border-radius: 1rem;
-    outline-width: 3px;
-    outline-offset: -1px;
-}
-
-.btn-action,
-.cs-light .btn-action {
-    border: .1rem var(--cs-accent-dark-sm) solid;
-    background-color: var(--cs-accent-light-lg);
-    outline-color: var(--cs-main-dark) !important;
-}
-.cs-dark .btn-action {
-    border: .1rem var(--cs-accent-light-sm) solid;
-    background-color: var(--cs-accent-dark-lg);
-    outline-color: var(--cs-main-light) !important;
-}
-@media(prefers-color-scheme: dark) {
-    .btn-action {
-        border: .1rem var(--cs-accent-light-sm) solid;
-        background-color: var(--cs-accent-dark-lg);
-        outline-color: var(--cs-main-light) !important;
-    }
 }

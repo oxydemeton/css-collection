@@ -1,0 +1,12 @@
+.cs-accent-blue {
+    --cs-accent-dark-sm: hsl(240 75% 34%);
+    --cs-accent-dark-lg: hsl(240 75% 44%);
+    --cs-accent-light-sm: hsl(240 75% 74%);
+    --cs-accent-light-lg: hsl(240 75% 70%);
+    --cs-selection: hsla(240, 75%, 70%, .4);
+    --cs-marker: yellow;
+}
+.cs-main-blue {
+    --cs-main-dark: hsl(240 35% 10%);
+    --cs-main-light: hsl(240, 75%, 90%);
+} 

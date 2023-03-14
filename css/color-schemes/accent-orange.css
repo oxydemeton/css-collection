@@ -1,0 +1,8 @@
+.cs-accent-orange {
+    --cs-accent-dark-sm: #6B3D0B;
+    --cs-accent-dark-lg: #854B0D;
+    --cs-accent-light-sm: #C47725;
+    --cs-accent-light-lg: #D96421;
+    --cs-selection: #994F0080; /*50% Alpha*/
+    --cs-marker: lime;
+}

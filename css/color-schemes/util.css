@@ -1,0 +1,30 @@
+/*Util Classes*/
+.btn-action {
+    font-size: var(--ft-size-md, 1.5rem);
+    font-weight: 800;
+    text-decoration: none;
+    padding: .75rem;
+    margin: 4px;
+    border-radius: 1rem;
+    outline-width: 3px;
+    outline-offset: -1px;
+}
+
+.btn-action,
+.cs-light .btn-action {
+    border: .1rem var(--cs-accent-dark-sm) solid;
+    background-color: var(--cs-accent-light-lg);
+    outline-color: var(--cs-main-dark) !important;
+}
+.cs-dark .btn-action {
+    border: .1rem var(--cs-accent-light-sm) solid;
+    background-color: var(--cs-accent-dark-lg);
+    outline-color: var(--cs-main-light) !important;
+}
+@media(prefers-color-scheme: dark) {
+    .btn-action {
+        border: .1rem var(--cs-accent-light-sm) solid;
+        background-color: var(--cs-accent-dark-lg);
+        outline-color: var(--cs-main-light) !important;
+    }
+}

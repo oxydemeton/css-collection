@@ -1,0 +1,8 @@
+.cs-accent-blue-yellow {
+    --cs-accent-dark-sm: hsl(242 89% 30%);
+    --cs-accent-dark-lg: hsl(50 80% 20%);
+    --cs-accent-light-sm: hsl(242 89% 75%);
+    --cs-accent-light-lg: hsl(50 89% 65%);
+    --cs-selection: hsla(240, 75%, 70%, .4);
+    --cs-marker: orange;
+}
