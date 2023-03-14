@@ -282,3 +282,17 @@ samp {
     font-weight: 300;
     font-family: monospace;
 }
+
+select,
+select option {
+    font-size: var(--ft-size-nm);
+}
+select {
+    border: none;
+    outline: 2px solid gray;
+    border-radius: 4px;
+}
+select:focus,
+select:hover {
+    outline: 2px solid black;
+}
