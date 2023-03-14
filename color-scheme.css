@@ -73,7 +73,7 @@ hr {
     border-color: var(--cs-accent-dark-sm);
 }
 
-blockquote {
+blockquote, dd {
     border-color: var(--cs-accent-dark-sm);
 }
 
@@ -134,7 +134,7 @@ details[open] summary:first-of-type::marker {
     hr {
         border-color: var(--cs-accent-light-sm);
     }
-    blockquote {
+    blockquote, dd {
         border-color: var(--cs-accent-light-sm);
     }
     
@@ -195,7 +195,7 @@ details[open] summary:first-of-type::marker {
 .cs-light :where(cite, strong){
     color: var(--cs-accent-dark-lg);
 }
-.cs-light blockquote {
+.cs-light blockquote, .cs-light dd {
     border-color: var(--cs-accent-dark-sm);
 }
 .cs-light textarea {
@@ -251,7 +251,7 @@ details[open] summary:first-of-type::marker {
 .cs-dark :where(cite, strong) {
     color: var(--cs-accent-light-lg);
 }
-.cs-dark blockquote {
+.cs-dark blockquote, .cs-light dd {
     border-color: var(--cs-accent-light-sm);
 }
 .cs-dark textarea {
