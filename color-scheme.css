@@ -26,6 +26,16 @@
     --cs-accent-light-sm: hsl(0 0% 65%);
     --cs-accent-light-lg: hsl(0 0% 55%);
 }
+.cs-main-default {
+    --cs-main-dark: hsl(0 0% 10%);
+    --cs-main-light: hsl(0 0% 90%);
+}
+.cs-accent-default {
+    --cs-accent-dark-sm: hsl(0 0% 25%);
+    --cs-accent-dark-lg: hsl(0 0% 35%);
+    --cs-accent-light-sm: hsl(0 0% 65%);
+    --cs-accent-light-lg: hsl(0 0% 55%);
+}
 /*Accent Colors*/
 .cs-accent-blue {
     --cs-accent-dark-sm: hsl(240 75% 34%);
