@@ -299,3 +299,12 @@ select:focus,
 select:hover {
     outline: 2px solid black;
 }
+@keyframes target_color_fade {
+	from { color: red; }
+	to { color: inherit; }
+}
+:target {
+    color:red;
+    animation: target_color_fade 2s forwards alternate;
+    animation-delay: 5s;
+}
