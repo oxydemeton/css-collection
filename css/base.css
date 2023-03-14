@@ -306,5 +306,5 @@ select:hover {
 :target {
     color:red;
     animation: target_color_fade 2s forwards alternate;
-    animation-delay: 5s;
+    animation-delay: 3s;
 }

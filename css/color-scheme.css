@@ -82,7 +82,7 @@
 :target {
     color: var(--cs-marker);
     animation: target_color_fade_scheme 2s forwards alternate;
-    animation-delay: 5s;
+    animation-delay: 3s;
 }
 mark {
     background-color: var(--cs-marker);
