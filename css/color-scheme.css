@@ -7,7 +7,7 @@
     --cs-accent-light-sm: var(--cs-cfg-accent-light-sm, hsl(0 0% 65%));
     --cs-accent-light-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 55%));
     --cs-selection: var(--cs-cfg-selection, hsla(0, 0%, 50%, .4));
-
+    
     /*Root Css*/
     color-scheme: dark light;
 }
@@ -69,6 +69,16 @@
 } 
 
 /* Apply Scheme */
+
+@keyframes target_color_fade_scheme {
+	from { color: var(--cs-selection); }
+	to { color: inherit; }
+}
+:target {
+    color: var(--cs-selection);
+    animation: target_color_fade_scheme 2s forwards alternate;
+    animation-delay: 5s;
+}
 
 html, .cs-light {
     background-color: var(--cs-main-light);
