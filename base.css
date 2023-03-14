@@ -238,6 +238,7 @@ abbr {
     color: darkgray;
     font-style: italic;
     text-decoration: underline .15ch dashed gray;
+    text-transform: uppercase;
 }
 
 dfn {
