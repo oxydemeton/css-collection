@@ -73,4 +73,5 @@ abbr.abbr-show-explanation::after {
 	content: '('attr(title)')';
 	font-size: .75em;
 	text-decoration: none;
+	text-transform: none;
 }
