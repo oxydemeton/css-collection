@@ -256,3 +256,29 @@ dt::after {
     padding-inline-start: .5ch;
     border-inline-start: .25ch solid black;
 }
+
+pre {
+    font-family: monospace;
+}
+code,
+code :is(pre) {
+    font-family: 'JetBrainsMono', monospace, system-ui;
+    font-weight: 300;
+}
+var {
+    font-weight: 500;
+    font-style: italic;
+    user-select: all;
+}
+kbd {
+    background-color: rgb(190, 190, 190);
+    padding-inline: .5ch;
+    border-radius: 4px;
+    user-select: all;
+    font-family: 'JetBrainsMono', monospace, system-ui;
+    font-weight: 300;
+}
+samp {
+    font-weight: 300;
+    font-family: monospace;
+}
