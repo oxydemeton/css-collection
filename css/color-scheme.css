@@ -18,7 +18,6 @@
 .cs-dark {
     color-scheme: dark;
 }
-
 .cs-default {
     --cs-main-dark: hsl(0 0% 10%);
     --cs-main-light: hsl(0 0% 83%);
@@ -43,7 +42,6 @@
 }
 
 /* Apply Scheme */
-
 @keyframes target_color_fade_scheme {
 	from { color: var(--cs-marker); }
 	to { color: inherit; }
@@ -150,7 +148,6 @@ kbd {
         [type=month], [type=week], [type=time]):is(:focus-visible, :active) {
         border-color: var(--cs-accent-light-sm);
     }
-    
     :where(button, input:is(
         [type=button], [type=submit], input[type=reset]
     )):is(:focus-visible, :hover, :active) {
