@@ -139,6 +139,10 @@ select:hover {
     outline-color: var(--cs-accent-dark-sm);
 }
 
+kbd {
+    background-color: var(--cs-accent-light-sm);
+}
+
 /*General dark mode*/
 @media(prefers-color-scheme: dark) {
     html {
@@ -199,6 +203,10 @@ select:hover {
     select:focus,
     select:hover {
         outline-color: var(--cs-accent-light-sm);
+    }
+
+    kbd {
+        background-color: var(--cs-accent-dark-sm);
     }
 }
 .cs-dark {
@@ -265,6 +273,9 @@ select:hover {
 .cs-light select:hover {
     outline-color: var(--cs-accent-dark-sm);
 }
+.cs-light kbd {
+    background-color: var(--cs-accent-light-sm);
+}
 
 /*Special dark mode*/
 .cs-dark hr {
@@ -325,6 +336,10 @@ select:hover {
 .cs-dark select:focus,
 .cs-dark select:hover {
     outline-color: var(--cs-accent-light-sm);
+}
+
+.cs-dark kbd {
+    background-color: var(--cs-accent-dark-sm);
 }
 
 /*Util Classes*/
