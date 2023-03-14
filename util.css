@@ -41,6 +41,9 @@ body.square-body  {
 }
 
 /*Ft Sizes */
+.ft-size-sm {
+    font-size: var(--ft-size-sm, 1.0rem);
+}
 .ft-size-nm {
     font-size: var(--ft-size-nm, 1.125rem);
 }
