@@ -6,6 +6,7 @@
     --cs-accent-dark-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 35%));
     --cs-accent-light-sm: var(--cs-cfg-accent-light-sm, hsl(0 0% 65%));
     --cs-accent-light-lg: var(--cs-cfg-accent-dark-lg, hsl(0 0% 55%));
+    --cs-selection: var(--cs-cfg-selection, hsla(0, 0%, 50%, .4));
 
     /*Root Css*/
     color-scheme: dark light;
@@ -25,6 +26,7 @@
     --cs-accent-dark-lg: hsl(0 0% 35%);
     --cs-accent-light-sm: hsl(0 0% 65%);
     --cs-accent-light-lg: hsl(0 0% 55%);
+    --cs-selection: hsla(0, 0%, 40%, .4);
 }
 .cs-main-default {
     --cs-main-dark: hsl(0 0% 10%);
@@ -35,6 +37,7 @@
     --cs-accent-dark-lg: hsl(0 0% 35%);
     --cs-accent-light-sm: hsl(0 0% 65%);
     --cs-accent-light-lg: hsl(0 0% 55%);
+    --cs-selection: hsla(0, 0%, 40%, .4);
 }
 /*Accent Colors*/
 .cs-accent-blue {
@@ -42,18 +45,21 @@
     --cs-accent-dark-lg: hsl(240 75% 44%);
     --cs-accent-light-sm: hsl(240 75% 74%);
     --cs-accent-light-lg: hsl(240 75% 70%);
+    --cs-selection: hsla(240, 75%, 70%, .4);
 }
 .cs-accent-blue-yellow {
     --cs-accent-dark-sm: hsl(242 89% 30%);
     --cs-accent-dark-lg: hsl(50 89% 23%);
     --cs-accent-light-sm: hsl(242 89% 75%);
     --cs-accent-light-lg: hsl(50 89% 65%);
+    --cs-selection: hsla(240, 75%, 70%, .4);
 }
 .cs-accent-orange {
     --cs-accent-dark-sm: #6B3D0B;
     --cs-accent-dark-lg: #854B0D;
     --cs-accent-light-sm: #C47725;
     --cs-accent-light-lg: #D96421;
+    --cs-selection: #D9642150;
 }
 
 /*Main Colors*/
@@ -111,7 +117,7 @@ input:where([type=text], [type=email], [type=tel], [type=search],
 }
 
 ::selection {
-    background-color: var(--cs-accent-light-lg);
+    background-color: var(--cs-selection);
 }
 
 th, td {
@@ -171,9 +177,6 @@ details[open] summary:first-of-type::marker {
     )):is(:focus-visible, :hover, :active) {
         outline-color: var(--cs-accent-light-lg);
     }
-    ::selection {
-        background-color: var(--cs-accent-dark-lg);
-    }
     th, td {
         border-color: var(--cs-accent-light-sm);
     }
@@ -228,9 +231,6 @@ details[open] summary:first-of-type::marker {
     outline-color: var(--cs-accent-dark-lg);
 }
 
-.cs-light ::selection {
-    background-color: var(--cs-accent-light-lg);
-}
 
 .cs-light th,
 .cs-light td {
@@ -284,9 +284,6 @@ details[open] summary:first-of-type::marker {
     outline-color: var(--cs-accent-light-lg);
 }
 
-.cs-dark ::selection {
-    background-color: var(--cs-accent-dark-lg);
-}
 
 .cs-dark th,
 .cs-dark td {
