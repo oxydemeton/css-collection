@@ -1,10 +1,14 @@
 *, *::after, *::before {
     box-sizing: inherit;
     scroll-behavior: inherit;
+    text-underline-offset: inherit;
+    text-decoration-thickness: inherit;
 }
 :root {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-underline-offset: .2ch;
+    text-decoration-thickness: .15ch;
     scroll-padding-top: 1em;
     --ft-size-nm: 1.125rem;
     --ft-size-nm: clamp(1rem, 0.25vw + 0.9rem, 3rem);
@@ -87,7 +91,8 @@ i {
     font-style: italic;
 }
 u {
-    text-decoration: underline;
+    text-decoration-style: underline;
+    
 }
 em {
     font-style: italic;
