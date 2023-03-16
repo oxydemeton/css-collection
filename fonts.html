@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/util.css">
     <style>
         body {
-            max-width: min(calc(100svh/3*5), 2560px);
+            max-width: max(min(calc(100dvh/3*5), 2560px), 100%);
             margin-inline: auto;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: center;
@@ -24,15 +24,14 @@
         }
         main {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(45ch, 1fr));
-            
+            grid-template-columns: repeat(auto-fit, minmax(min(45ch, 98vw), 1fr));
             gap: 1em;
-            padding-inline: 1em;
+            margin-inline: 1em;
         }
         section {
             border: .125em solid hsl(0, 0%, 50%);
             padding: .25em;
-            border-radius: 2.5%;
+            border-radius: 16px;
         }
         h2 {
             font-size: var(--ft-size-2xl);
