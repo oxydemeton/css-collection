@@ -7,6 +7,6 @@
     --cs-marker: yellow;
 }
 .cs-main-blue {
-    --cs-main-dark: hsl(240 35% 10%);
-    --cs-main-light: hsl(240, 70%, 95%);
+    --cs-main-dark: hsl(240 28% 8%);
+    --cs-main-light: hsl(240, 60%, 90%);
 } 
