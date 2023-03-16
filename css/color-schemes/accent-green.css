@@ -1,0 +1,8 @@
+.cs-accent-green {
+    --cs-accent-dark-sm: #003809;
+    --cs-accent-dark-lg: #006B12;
+    --cs-accent-light-sm: #00D924;
+    --cs-accent-light-lg: #00A61C;
+    --cs-selection: rgba(250, 69, 13, .4);
+    --cs-marker: #E40DFF;
+}
