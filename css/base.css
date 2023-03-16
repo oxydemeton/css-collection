@@ -308,3 +308,12 @@ select:hover {
     animation: target_color_fade 2s forwards alternate;
     animation-delay: 3s;
 }
+
+noscript {
+    font-size: var(--ft-size-xl);
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    margin: 1rem;
+    display: block;
+}
